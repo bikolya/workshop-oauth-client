@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>My Tips</title>
+  </head>
+  <body>
+    <% venues.each do |venue| %>
+      <p>
+        <strong> Название: </strong>
+        <%= venue['venue']['name'] %>
+        <br/>
+      </p>
+    <% end %>
+  </body>
+</html>

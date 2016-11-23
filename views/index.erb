@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>My Tips</title>
+  </head>
+  <body>
+    <% tips.each do |tip| %>
+      <p>
+        <strong> Название места: </strong>
+        <%= tip['venue']['name'] %>
+        <br/>
+        <strong> Отзыв: </strong>
+        <%= tip['text'] %>
+        <br/>
+      </p>
+    <% end %>
+  </body>
+</html>
+
